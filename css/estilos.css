@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+
+/* -----------------------modificaciones en el menu-----------------*/
+h1 {
+  color: seagreen;
+  margin: 6px;
+}
+
+div .texto_inicio {
+  padding: 20px;
+
+}
+
+.nav_index {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: #24bd8f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: aliceblue;
+  margin: 10px;
+}
+
+.menu a {
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu:hover {
+  @keyframes myAnim {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  };
+}
+
+.menu:active {
+  background-color: #3e8e41;
+}
+
+.boton_chico {
+  padding: 10px 70px;
+  background-color: #24bd8f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: aliceblue;
+  text-align: center;
+
+}
+
+.formulario-contacto {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  gap: 1%;
+  padding: 3%;
+  ;
+  justify-content: stretch;
+  text-align: center;
+
+}
+
+.datos {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: rgb(222, 249, 240);
+  color: seagreen;
+  margin: 6px;
+  border: 1px solid rgb(251, 254, 253);
+  border-radius: 15px;
+  text-align: center;
+  padding: 3px;
+}
+
+
+
+.texto-consulta {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+}
+
+h5 {
+  color: seagreen;
+  margin: 6px;
+}
+
+.boton_chico a {
+  color: whitesmoke;
+}
+
+.boton_chico {
+  list-style-type: none;
+
+
+}
+
+.boton_chico:hover {
+  background-color: rgb(101, 233, 189);
+}
+
+p {
+  padding: 15px;
+  text-align: justify;
+}
+
+.texto_inicio {
+  background-image: url(/PRG/DESARROLLADOR\ WEB/);
+  background-size: cover;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.texto-consulta {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.liform {
+
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+
+footer {
+  background-color: #24bd8f;
+  margin: 2px;
+}
+
+footer p {
+  color: white;
+  text-align: end;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/* -----------------------AGREGADOS PARA SEGUNDA PRE-ENTREGA (con correcciones)-----------------*/
+
+/* -----------------------UTILIZACION DE FLEX + BOOSTRAP-----------------*/
+
+
+/* Seccion de Productos*/
+div .productos-riego {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.card {
+  color: seagreen;
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid rgb(101, 233, 189);
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+
+}
+
+.card-text {
+  text-align: left;
+}
+
+.card-img-top {
+  width: 12rem;
+  height: 6rem;
+  border-radius: 8px;
+}
+
+h2 {
+  color: seagreen;
+  text-align: center;
+  margin: 12px;
+}
+
+
+/* -----------------------UTILIZACION DE GRIDS-----------------*/
+
+/* Seccion de Nosotros*/
+
+.padre-grid-nosotros {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  gap: 1%;
+  padding: 1%;
+  justify-content: cover;
+}
+
+img .grid-aspersor {
+  width: 200px;
+}
+
+.grid-aspersor {
+  grid-column: 1/3;
+  grid-row: 1/4;
+
+}
+
+.grid-canerias {
+  grid-column: 3/4;
+  grid-row: 1/2;
+
+}
+
+.grid-mp {
+  grid-column: 3/4;
+  grid-row: 2/3;
+
+}
+
+.grid-parque {
+  grid-column: 3/4;
+  grid-row: 3/4;
+
+}
+
+.grid-aspersor,
+.grid-canerias,
+.grid-mp,
+.grid-parque {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  justify-content: stretch;
+}
+
+/* -----------------------AGREGADOS PARA Tercera PRE-ENTREGA-----------------*/
+
+.tutoriales {
+  margin: 15px;
+  padding: 15px;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 15px
+}
+
+.ajuste_aspersor,
+.programacion_equipo {
+  padding: 15px;
+  margin: 5px;
+  border: 2px solid rgb(120, 236, 198);
+  border-radius: 15px
+}
+
+/* -----------------------Tercera PRE-ENTREGA SASS-----------------*/
+
+
+

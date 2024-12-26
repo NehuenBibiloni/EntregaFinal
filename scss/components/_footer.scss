@@ -1,0 +1,13 @@
+$color_fondo: linear-gradient(to right, #48dabb, #5ee1a7, #4de1ac, #35e1b2, #00e1b8, #00d8da, );
+$color_letras: white;
+
+footer {
+    background-image: $color_fondo;
+}
+
+footer p {
+    color: $color_letras;
+    text-align: end;
+    padding: 1%;
+
+}

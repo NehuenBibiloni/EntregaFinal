@@ -1,0 +1,35 @@
+div .productos-riego {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.card {
+  color: seagreen;
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid rgb(101, 233, 189);
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+
+}
+
+.card-text {
+  text-align: left;
+  color: rgb(41, 133, 102);
+}
+
+.card-img-top {
+  width: 12rem;
+  height: 6rem;
+  border-radius: 8px;
+}
+
+h2 {
+  color: seagreen;
+  text-align: center;
+  margin: 12px;
+}

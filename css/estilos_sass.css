@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  list-style-type: none;
+}
+
+h1 {
+  color: seagreen;
+  margin: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.texto_inicio {
+  width: 100%;
+  height: 350px;
+  background: #8ce8b4 url(../img/jardin_prueba.jpg) center center/cover no-repeat;
+}
+
+p {
+  color: rgb(247, 249, 248);
+  text-decoration: solid;
+}
+
+footer {
+  background-image: linear-gradient(to right, #48dabb, #5ee1a7, #4de1ac, #35e1b2, #00e1b8, #00d8da);
+}
+
+footer p {
+  color: white;
+  text-align: end;
+  padding: 1%;
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-image: linear-gradient(to right, #48dabb, #5ee1a7, #4de1ac, #35e1b2, #00e1b8, #00d8da);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: aliceblue;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.nav_index {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.menu a {
+  color: whitesmoke;
+  text-decoration: none;
+  align-items: center;
+}
+
+.menu:hover {
+  animation: Boton_inicio 1s ease 0s 1 normal forwards;
+}
+@keyframes Boton_inicio {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.menu:active {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-basis: 40%;
+    text-align: center;
+  }
+}
+.formulario-contacto {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2;
+  width: 100%;
+  margin: 0;
+  gap: 2%;
+  padding: 2%;
+  margin: 1%;
+}
+
+div .datos {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  background-color: rgb(222, 249, 240);
+  color: seagreen;
+  margin: 3px;
+  border: 4px solid rgb(176, 230, 212);
+  border-radius: 15px;
+  text-align: center;
+  padding: 0px;
+  padding-top: 0%;
+  width: 100%;
+}
+
+.liform {
+  padding-top: 10px;
+  margin: 10px;
+}
+
+div .texto-consulta {
+  margin: 3px;
+  grid-row: 1/2;
+  grid-column: 4/7;
+  width: 100%;
+  border: 4px solid rgb(176, 230, 212);
+  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+div .texto-consulta textarea {
+  width: 99%;
+  height: 99%;
+  padding: none;
+  margin: none;
+  color: seagreen;
+  text-align: center;
+  border-style: none;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.grid-boton {
+  grid-column: 2/6;
+  grid-row: 2/3;
+  object-fit: cover;
+  width: 100%;
+}
+
+.boton_chico {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  justify-items: center;
+  background-color: #48dabb;
+  border-radius: 10px;
+  border-style: none;
+  color: whitesmoke;
+  animation: pulsate 3s infinite alternate;
+}
+.boton_chico:hover {
+  background-color: rgb(114.4227272727, 226.5772727273, 202.7636363636);
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+p {
+  padding: 15px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .formulario-contacto {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+div .productos-riego {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  color: seagreen;
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid rgb(101, 233, 189);
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.card-text {
+  text-align: left;
+  color: rgb(41, 133, 102);
+}
+
+.card-img-top {
+  width: 12rem;
+  height: 6rem;
+  border-radius: 8px;
+}
+
+h2 {
+  color: seagreen;
+  text-align: center;
+  margin: 12px;
+}
+
+section {
+  display: flex;
+  margin: 15px;
+}
+
+.padre-grid-nosotros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  margin: 0px;
+  gap: 1%;
+  padding: 0%;
+  justify-content: cover;
+}
+
+.grid-aspersor {
+  grid-column: 2/5;
+  grid-row: 1/4;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.grid-canerias {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.grid-mp {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.grid-parque {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.grid-texto {
+  text-align: end;
+  text-decoration: solid;
+  text-shadow: 3px 3px 3px #141414;
+  padding-right: 5%;
+  position: absolute;
+  gap: 0;
+  margin: 0;
+  bottom: 0;
+  padding-bottom: 10%;
+}
+
+.grid-aspersor,
+.grid-canerias,
+.grid-mp,
+.grid-parque {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  justify-content: cover;
+}
+
+@media (max-width: 768px) {
+  .padre-grid-nosotros {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  }
+}
+.tutoriales {
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.ajuste_aspersor,
+.programacion_equipo {
+  padding: 15px;
+  margin: 5px;
+  border: 2px solid rgb(120, 236, 198);
+  border-radius: 15px;
+}
+
+iframe {
+  width: 450px;
+  height: 250px;
+  display: flex;
+  border-radius: 50px;
+}
+
+.tutoriales p {
+  background-color: #5ee1a7;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .tutoriales {
+    flex-direction: column;
+  }
+}
+/*input {
+    padding: 10px 20px;
+    border: none;
+    background-color: #8ce8b4 ;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }*/
+.contenedor-proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 70%;
+  margin: 0;
+  gap: 4px;
+  padding: 5px;
+  margin: 5px;
+  padding-right: 20px;
+  justify-content: center;
+  text-align: center;
+  grid-auto-flow: row;
+}
+
+.formulario-proyectos {
+  display: flex;
+  justify-content: center;
+  grid-row: 1/1;
+  grid-column: 1/2;
+  background-color: rgb(222, 249, 240);
+  color: seagreen;
+  border: 1px solid rgb(251, 254, 253);
+  border-radius: 15px;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+.liform {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  margin: 5px;
+}
+
+li .boton_chico {
+  max-width: 100%;
+  margin: 0;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-row: 1/1;
+  grid-column: 2/3;
+  background-color: rgb(222, 249, 240);
+  color: seagreen;
+  margin: 0px;
+  border: 1px solid rgb(251, 254, 253);
+  border-radius: 15px;
+  text-align: center;
+  margin: 0px;
+  padding: 25px;
+  padding-top: 0%;
+  height: 100%;
+  width: 100%;
+}
+.carousel .boton_chico {
+  max-width: 80%;
+  padding: 10px;
+  margin: 5px;
+}
+.carousel img {
+  margin: 2px;
+  max-width: 95%;
+  max-height: 250px;
+}
+.carousel p {
+  color: seagreen;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .contenedor-proyectos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=estilos_sass.css.map */

@@ -1,0 +1,67 @@
+$color_fondo: linear-gradient(to right, #48dabb, #5ee1a7, #4de1ac, #35e1b2, #00e1b8, #00d8da, );
+
+nav .menu {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-image: $color_fondo;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: aliceblue;
+  margin: 10px;
+  justify-content: space-around;
+  width: 100%;
+  
+
+}
+
+
+.nav_index {
+  display: flex;
+  flex: 1;
+  justify-content:space-around;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.menu a {
+  color: whitesmoke;
+  text-decoration: none;
+  align-items: center;
+  width: 100%;
+}
+
+.menu:hover {
+  animation: Boton_inicio 1s ease 0s 1 normal forwards;
+
+  @keyframes Boton_inicio {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+
+
+.menu:active {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-basis: 40%;
+    text-align: center;
+  }
+}

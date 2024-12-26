@@ -1,0 +1,40 @@
+.tutoriales {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px
+}
+
+.ajuste_aspersor,
+.programacion_equipo {
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid rgb(120, 236, 198);
+    border-radius: 15px
+}
+
+iframe {
+    width: 450px;
+    height: 250px;
+    display: flex;
+    border-radius: 50px;
+
+}
+
+.tutoriales p {
+    background-color: #5ee1a7;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .tutoriales {
+
+        flex-direction: column;
+    }
+
+}
